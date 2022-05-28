@@ -1,6 +1,9 @@
-﻿@{
+﻿@model PrivacyModel
+
+@{
     ViewData["Title"] = "Privacidade";
 }
 
 
 <p>Minha página de privacidade</p>
+<p>Em caso de problemas ligue: <b>@Model.Phone</b> ou envie um e-mail para: <b>@Model.EmailSupport</b></p>

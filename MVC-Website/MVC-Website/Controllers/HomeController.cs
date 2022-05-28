@@ -9,7 +9,10 @@ namespace MVC_Website.Controllers
 
         public IActionResult Index()
         {
+           
             HomeModel home = new HomeModel();
+
+            
 
             home.Nome = "Gustavo de Alencar";
             home.Email = "gustavo.barros3@outlook.com";
@@ -18,8 +21,13 @@ namespace MVC_Website.Controllers
         }
 
         public IActionResult Privacy()
+             
         {
-            return View();
+            PrivacyModel privacy = new PrivacyModel();
+
+            privacy.Phone = "0800-768-942";
+            privacy.EmailSupport = "support@aspnet.com";
+            return View(privacy);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
